@@ -1,0 +1,9 @@
+<div class="header">
+    <h2 [ngStyle]="{float: 'left'}">Task tracker</h2>
+
+    <app-button *ngIf="hasRoute('/')"
+        text="{{showAddTask ? 'Close' : 'Add' }}" 
+        color="{{showAddTask ? 'red' : 'green' }}" 
+        (btnClick)="toogleAddTask()" 
+        [ngStyle]="{float: 'right'}"/>
+</div> 
